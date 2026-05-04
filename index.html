@@ -1,1755 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThrivePaw — Daily Routines for Golden Retriever Parents</title>
-  <meta name="description" content="Premium lifestyle planners, bonding rituals, and the upcoming AI Companion built for Golden Retriever parents who treat their dog like family. Join the waitlist.">
-  <meta property="og:title" content="ThrivePaw — Daily Routines for Golden Retriever Parents">
-  <meta property="og:description" content="Premium lifestyle planners, bonding rituals, and the upcoming AI Companion built for Golden Retriever parents who treat their dog like family. Join the waitlist.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1583511655826-05700d52f4d9?w=1200&h=630&fit=crop&q=80">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ThrivePaw — Happy Training, Happy Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- MailerLite Universal -->
-  <script>
+<!-- MailerLite Universal -->
+<script>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
     (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
     ml('account', '2079597');
-  </script>
-  <!-- End MailerLite Universal -->
-
-  <style>
-    /* ═══════════════════════════════════════════
-       BASE & RESET
-    ═══════════════════════════════════════════ */
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      background-color: #F5EFE7;
-      color: #2C3E2D;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      cursor: default;
-    }
-
-    /* ═══════════════════════════════════════════
-       SCROLL PROGRESS BAR
-    ═══════════════════════════════════════════ */
-    #scroll-progress {
-      position: fixed;
-      top: 0; left: 0;
-      height: 3px;
-      width: 0%;
-      background: linear-gradient(90deg, #87A96B 0%, #D4A574 100%);
-      z-index: 99999;
-      transition: width .15s ease;
-      box-shadow: 0 0 10px rgba(212,165,116,.5);
-    }
-
-    /* ═══════════════════════════════════════════
-       KEYFRAME ANIMATIONS
-    ═══════════════════════════════════════════ */
-    @keyframes float-up {
-      0%   { transform: translateY(0) rotate(0deg);   opacity: 0; }
-      10%  { opacity: .6; }
-      90%  { opacity: .4; }
-      100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
-    }
-    @keyframes float-soft {
-      0%, 100% { transform: translateY(0) }
-      50%      { transform: translateY(-14px) }
-    }
-    @keyframes orb-drift {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33%      { transform: translate(40px, -30px) scale(1.08); }
-      66%      { transform: translate(-30px, 25px) scale(.95); }
-    }
-    @keyframes shimmer {
-      0%   { background-position: -200% center; }
-      100% { background-position: 200% center; }
-    }
-    @keyframes pulse-soft {
-      0%, 100% { box-shadow: 0 8px 28px rgba(135,169,107,.3); }
-      50%      { box-shadow: 0 8px 36px rgba(135,169,107,.6); }
-    }
-    @keyframes breathe {
-      0%, 100% { transform: scale(1); }
-      50%      { transform: scale(1.02); }
-    }
-    @keyframes draw-underline {
-      from { width: 0; }
-      to   { width: 100%; }
-    }
-    @keyframes gradient-shift {
-      0%, 100% { background-position: 0% 50%; }
-      50%      { background-position: 100% 50%; }
-    }
-    @keyframes spin-slow {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
-    }
-    @keyframes fade-zoom-in {
-      from { opacity: 0; transform: scale(.92); }
-      to   { opacity: 1; transform: scale(1); }
-    }
-    @keyframes slide-in-left {
-      from { opacity: 0; transform: translateX(-40px); }
-      to   { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes slide-in-right {
-      from { opacity: 0; transform: translateX(40px); }
-      to   { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(0); }
-      25%      { transform: rotate(-8deg); }
-      75%      { transform: rotate(8deg); }
-    }
-    @keyframes glow-pulse {
-      0%, 100% { box-shadow: 0 8px 24px rgba(212,165,116,.4); }
-      50%      { box-shadow: 0 12px 40px rgba(212,165,116,.65), 0 0 60px rgba(212,165,116,.3); }
-    }
-    @keyframes blob-morph {
-      0%, 100% { border-radius: 50% 40% 60% 50% / 60% 50% 50% 40%; }
-      50%      { border-radius: 40% 60% 50% 60% / 50% 60% 40% 50%; }
-    }
-
-    /* ═══════════════════════════════════════════
-       SCROLL REVEAL
-    ═══════════════════════════════════════════ */
-    .reveal {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-50px);
-      transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
-    }
-    .reveal-left.visible { opacity: 1; transform: translateX(0); }
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(50px);
-      transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
-    }
-    .reveal-right.visible { opacity: 1; transform: translateX(0); }
-    .reveal-zoom {
-      opacity: 0;
-      transform: scale(.9);
-      transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1);
-    }
-    .reveal-zoom.visible { opacity: 1; transform: scale(1); }
-
-    /* ═══════════════════════════════════════════
-       BUTTONS — with shimmer + glow
-    ═══════════════════════════════════════════ */
-    .btn-sage, .btn-honey {
-      position: relative;
-      display: inline-block;
-      color: #fff;
-      border: none;
-      border-radius: 9999px;
-      padding: 17px 38px;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: .03em;
-      cursor: pointer;
-      text-decoration: none;
-      line-height: 1.2;
-      overflow: hidden;
-      transition: transform .3s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease;
-      isolation: isolate;
-    }
-    .btn-sage  { background: linear-gradient(135deg, #87A96B 0%, #6d8f55 100%); box-shadow: 0 6px 20px rgba(135,169,107,.35); }
-    .btn-honey { background: linear-gradient(135deg, #D4A574 0%, #c4956a 100%); box-shadow: 0 6px 20px rgba(212,165,116,.4); }
-
-    .btn-sage::before, .btn-honey::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.45) 50%, transparent 70%);
-      background-size: 200% 100%;
-      transform: translateX(-100%);
-      transition: transform .7s ease;
-      z-index: -1;
-    }
-    .btn-sage:hover, .btn-honey:hover {
-      transform: scale(1.05) translateY(-2px);
-    }
-    .btn-sage:hover  { box-shadow: 0 14px 40px rgba(135,169,107,.55); }
-    .btn-honey:hover { box-shadow: 0 14px 40px rgba(212,165,116,.6); }
-    .btn-sage:hover::before, .btn-honey:hover::before {
-      transform: translateX(100%);
-    }
-    .btn-pulse  { animation: pulse-soft 2.4s ease-in-out infinite; }
-    .btn-glow   { animation: glow-pulse 2.6s ease-in-out infinite; }
-    .btn-breathe{ animation: breathe 3.2s ease-in-out infinite; }
-
-    /* ═══════════════════════════════════════════
-       CARDS — 3D tilt + gradient border
-    ═══════════════════════════════════════════ */
-    .card {
-      position: relative;
-      background: #fff;
-      border-radius: 22px;
-      padding: 38px 32px;
-      box-shadow: 0 4px 24px rgba(44,62,45,.07);
-      transition: transform .45s cubic-bezier(.2,.7,.2,1), box-shadow .45s ease;
-      transform-style: preserve-3d;
-      will-change: transform;
-    }
-    .card::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: 22px;
-      padding: 1px;
-      background: linear-gradient(135deg, transparent 0%, rgba(212,165,116,.4) 50%, transparent 100%);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-              mask-composite: exclude;
-      opacity: 0;
-      transition: opacity .4s ease;
-      pointer-events: none;
-    }
-    .card:hover {
-      transform: translateY(-8px) scale(1.01);
-      box-shadow: 0 24px 60px rgba(44,62,45,.16);
-    }
-    .card:hover::before { opacity: 1; }
-    .card .card-icon {
-      display: inline-block;
-      transition: transform .5s cubic-bezier(.34,1.56,.64,1);
-    }
-    .card:hover .card-icon {
-      transform: scale(1.15) rotate(-8deg);
-      animation: wiggle .6s ease-in-out;
-    }
-
-    .t-card {
-      position: relative;
-      background: rgba(255,255,255,.85);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,.6);
-      border-radius: 22px;
-      padding: 30px 28px;
-      box-shadow: 0 4px 24px rgba(44,62,45,.07);
-      transition: transform .4s cubic-bezier(.2,.7,.2,1), box-shadow .4s ease;
-    }
-    .t-card:hover {
-      transform: translateY(-6px) scale(1.015);
-      box-shadow: 0 20px 50px rgba(44,62,45,.14);
-    }
-
-    /* ═══════════════════════════════════════════
-       HERO + DECORATIVE
-    ═══════════════════════════════════════════ */
-    .hero-bg {
-      position: relative;
-      background-image:
-        linear-gradient(135deg, rgba(44,62,45,.78) 0%, rgba(44,62,45,.42) 55%, rgba(212,165,116,.22) 100%),
-        url('https://images.unsplash.com/photo-1583511655826-05700d52f4d9?w=1920&q=85&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
-    @media (max-width: 768px) {
-      .hero-bg { background-attachment: scroll; }
-    }
-
-    .final-bg {
-      position: relative;
-      background-image:
-        linear-gradient(135deg, rgba(44,62,45,.78) 0%, rgba(44,62,45,.5) 60%, rgba(212,165,116,.32) 100%),
-        url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1920&q=85&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
-    @media (max-width: 768px) {
-      .final-bg { background-attachment: scroll; }
-    }
-
-    /* Floating paw prints */
-    .paw-particle {
-      position: absolute;
-      pointer-events: none;
-      font-size: 1.4rem;
-      opacity: 0;
-      animation: float-up linear infinite;
-      filter: drop-shadow(0 2px 8px rgba(212,165,116,.4));
-      z-index: 1;
-    }
-
-    /* Gradient orbs (background blobs) */
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: .35;
-      pointer-events: none;
-      animation: orb-drift 18s ease-in-out infinite, blob-morph 20s ease-in-out infinite;
-      z-index: 0;
-    }
-    .orb-sage  { background: radial-gradient(circle, #87A96B 0%, transparent 70%); }
-    .orb-honey { background: radial-gradient(circle, #D4A574 0%, transparent 70%); }
-
-    /* Hero content stacked above orbs/paws */
-    .hero-content { position: relative; z-index: 10; }
-
-    /* ═══════════════════════════════════════════
-       ANIMATED HEADLINE UNDERLINE
-    ═══════════════════════════════════════════ */
-    .h-accent {
-      position: relative;
-      display: inline-block;
-    }
-    .h-accent::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      height: 4px;
-      width: 0;
-      background: linear-gradient(90deg, #87A96B, #D4A574);
-      border-radius: 2px;
-    }
-    .reveal.visible .h-accent::after,
-    .reveal-zoom.visible .h-accent::after {
-      animation: draw-underline 1.1s cubic-bezier(.2,.7,.2,1) .3s forwards;
-    }
-
-    /* Gradient text for emphasis */
-    .gradient-text {
-      background: linear-gradient(135deg, #87A96B 0%, #D4A574 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 200%;
-      animation: gradient-shift 4s ease infinite;
-    }
-
-    /* ═══════════════════════════════════════════
-       MARQUEE STRIP
-    ═══════════════════════════════════════════ */
-    .marquee-wrap {
-      overflow: hidden;
-      background: linear-gradient(90deg, #2C3E2D 0%, #3d5540 50%, #2C3E2D 100%);
-      padding: 14px 0;
-      border-top: 1px solid rgba(212,165,116,.2);
-      border-bottom: 1px solid rgba(212,165,116,.2);
-    }
-    .marquee-track {
-      display: flex;
-      width: max-content;
-      animation: marquee 30s linear infinite;
-    }
-    .marquee-track > span {
-      padding: 0 40px;
-      font-family: 'Caveat', cursive;
-      font-size: 1.3rem;
-      color: #D4A574;
-      white-space: nowrap;
-      letter-spacing: .04em;
-    }
-
-    /* ═══════════════════════════════════════════
-       FAQ
-    ═══════════════════════════════════════════ */
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .5s cubic-bezier(.4,0,.2,1);
-    }
-    .faq-answer.open { max-height: 380px; }
-    .faq-icon { transition: transform .35s cubic-bezier(.34,1.56,.64,1); display: inline-block; }
-    .faq-item.active .faq-icon { transform: rotate(135deg); color: #D4A574; }
-    .faq-item { transition: background-color .3s ease; border-radius: 12px; padding-left: 12px; padding-right: 12px; }
-    .faq-item:hover { background: rgba(135,169,107,.04); }
-    .faq-item.active { background: rgba(212,165,116,.06); }
-
-    /* ═══════════════════════════════════════════
-       EXIT POPUP
-    ═══════════════════════════════════════════ */
-    #exit-popup {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: rgba(44,62,45,.62);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    #exit-popup.show { display: flex; animation: fade-zoom-in .4s ease forwards; }
-    .popup-card { animation: fade-zoom-in .5s cubic-bezier(.34,1.56,.64,1); }
-
-    /* ═══════════════════════════════════════════
-       STICKY MOBILE CTA
-    ═══════════════════════════════════════════ */
-    #sticky-cta {
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 50;
-      background: rgba(255,255,255,.95);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 -8px 32px rgba(44,62,45,.16);
-      padding: 12px 16px;
-      transform: translateY(100%);
-      transition: transform .4s cubic-bezier(.4,0,.2,1);
-      display: none;
-    }
-    #sticky-cta.visible { transform: translateY(0); }
-
-    /* ═══════════════════════════════════════════
-       RESPONSIVE GRIDS
-    ═══════════════════════════════════════════ */
-    .three-col {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-    .three-col-footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-    .stat-strip {
-      display: flex;
-      align-items: stretch;
-    }
-
-    @media (max-width: 1024px) {
-      .three-col { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 768px) {
-      .three-col { grid-template-columns: 1fr; }
-      .two-col { grid-template-columns: 1fr; gap: 40px; }
-      .three-col-footer { grid-template-columns: 1fr; gap: 32px; text-align: center; }
-      .footer-links { align-items: center !important; }
-      .stat-strip { flex-direction: column; }
-      .stat-sep { display: none; }
-      #sticky-cta { display: block; }
-    }
-
-    /* ═══════════════════════════════════════════
-       BENEFIT ROWS
-    ═══════════════════════════════════════════ */
-    .benefit-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 22px 0;
-      border-bottom: 1px solid #f0ebe4;
-      transition: transform .3s ease, padding-left .3s ease;
-    }
-    .benefit-row:hover { transform: translateX(4px); }
-    .benefit-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .benefit-row:first-child { padding-top: 0; }
-    .benefit-row .benefit-icon { transition: transform .4s cubic-bezier(.34,1.56,.64,1); }
-    .benefit-row:hover .benefit-icon { transform: scale(1.2) rotate(-6deg); }
-
-    /* ═══════════════════════════════════════════
-       SECTION DIVIDERS (SVG curves)
-    ═══════════════════════════════════════════ */
-    .section-divider {
-      display: block;
-      width: 100%;
-      height: 60px;
-    }
-
-    /* ═══════════════════════════════════════════
-       IMAGE HOVER EFFECTS
-    ═══════════════════════════════════════════ */
-    .img-zoom {
-      overflow: hidden;
-      border-radius: 24px;
-    }
-    .img-zoom img {
-      transition: transform .9s cubic-bezier(.2,.7,.2,1), filter .6s ease;
-      display: block;
-    }
-    .img-zoom:hover img {
-      transform: scale(1.06);
-      filter: brightness(1.05) saturate(1.08);
-    }
-
-    /* Decorative badge breathing */
-    .badge-breathe { animation: breathe 3s ease-in-out infinite; }
-
-    /* Logo hover */
-    .logo {
-      display: inline-block;
-      transition: transform .3s ease;
-    }
-    .logo:hover { transform: scale(1.05); }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #F5EFE7; }
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, #D4A574, #87A96B);
-      border-radius: 4px;
-    }
-
-    /* Selection */
-    ::selection { background: rgba(212,165,116,.35); color: #2C3E2D; }
-
-    /* Counter wrap */
-    .counter { display: inline-block; }
-
-    /* App mockup floating */
-    .app-mockup { animation: float-soft 5s ease-in-out infinite; }
-
-    /* Stagger delays */
-    .stagger-1 { transition-delay: .08s; }
-    .stagger-2 { transition-delay: .18s; }
-    .stagger-3 { transition-delay: .28s; }
-    .stagger-4 { transition-delay: .38s; }
-    .stagger-5 { transition-delay: .48s; }
-
-    /* ═══════════════════════════════════════════
-       FUTURISTIC AI PRELOADER — RUNNING DOGS
-    ═══════════════════════════════════════════ */
-    #ai-preloader {
-      position: fixed; inset: 0; z-index: 999999;
-      background: radial-gradient(ellipse at 50% 40%, #1a2e26 0%, #0a1410 55%, #02060a 100%);
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column;
-      transition: opacity .8s ease, visibility .8s ease;
-      overflow: hidden;
-    }
-    #ai-preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-    /* Glowing horizon line the dogs run on */
-    .ai-track {
-      position: relative; z-index: 6;
-      width: min(720px, 90vw); height: 180px;
-      margin-bottom: 38px;
-    }
-    .ai-track::before {
-      content: ""; position: absolute; left: 0; right: 0; bottom: 38px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #87A96B 20%, #D4A574 50%, #87A96B 80%, transparent);
-      box-shadow: 0 0 18px #87A96B, 0 0 36px rgba(212,165,116,.7);
-    }
-    .ai-track::after {
-      content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 38px;
-      background:
-        repeating-linear-gradient(90deg, rgba(135,169,107,.18) 0 2px, transparent 2px 60px);
-      mask-image: linear-gradient(0deg, #000, transparent);
-      -webkit-mask-image: linear-gradient(0deg, #000, transparent);
-      animation: track-stream .35s linear infinite;
-    }
-    @keyframes track-stream {
-      from { background-position: 0 0; }
-      to   { background-position: -60px 0; }
-    }
-    .ai-horizon {
-      position: absolute; left: 50%; bottom: 38px; transform: translateX(-50%);
-      width: 280px; height: 60px;
-      background: radial-gradient(ellipse at center bottom, rgba(212,165,116,.5), transparent 70%);
-      filter: blur(8px); pointer-events: none;
-    }
-    .runner {
-      position: absolute; bottom: 30px;
-      width: 110px; height: 70px;
-      filter: drop-shadow(0 6px 8px rgba(0,0,0,.6)) drop-shadow(0 0 14px rgba(135,169,107,.6));
-      animation: dog-run 2s ease-in-out infinite, dog-cross 6s linear infinite;
-    }
-    .runner.frenchie {
-      width: 88px; height: 60px; bottom: 32px;
-      animation: dog-run-fast 1.4s ease-in-out infinite, dog-cross-2 6s linear infinite;
-      animation-delay: 0s, -3s;
-      filter: drop-shadow(0 6px 8px rgba(0,0,0,.6)) drop-shadow(0 0 14px rgba(212,165,116,.6));
-    }
-    @keyframes dog-run {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(-6px); }
-    }
-    @keyframes dog-run-fast {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(-4px); }
-    }
-    @keyframes dog-cross {
-      0%   { left: -15%; }
-      100% { left: 110%; }
-    }
-    @keyframes dog-cross-2 {
-      0%   { left: -15%; }
-      100% { left: 110%; }
-    }
-    /* Leg animation via inner SVG groups */
-    .leg-front, .leg-back {
-      transform-origin: top center;
-      animation: leg-swing .3s ease-in-out infinite alternate;
-    }
-    .leg-back { animation-delay: -.15s; }
-    @keyframes leg-swing {
-      from { transform: rotate(-30deg); }
-      to   { transform: rotate(30deg); }
-    }
-    .tail-wag {
-      transform-origin: left center;
-      animation: tail-wag .25s ease-in-out infinite alternate;
-    }
-    @keyframes tail-wag {
-      from { transform: rotate(-15deg); }
-      to   { transform: rotate(25deg); }
-    }
-    /* Speed motion lines behind dogs */
-    .speed-line {
-      position: absolute; height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(212,165,116,.85), transparent);
-      animation: streak 1s linear infinite;
-    }
-    @keyframes streak {
-      0%   { transform: translateX(100%); opacity: 0; }
-      30%  { opacity: 1; }
-      100% { transform: translateX(-200%); opacity: 0; }
-    }
-    /* Particle dust kicked up by paws */
-    .dust {
-      position: absolute; bottom: 36px; width: 4px; height: 4px; border-radius: 50%;
-      background: rgba(212,165,116,.7);
-      animation: dust-puff 1.2s ease-out infinite;
-      filter: blur(.5px);
-    }
-    @keyframes dust-puff {
-      0%   { transform: translate(0,0) scale(.4); opacity: .9; }
-      100% { transform: translate(-40px,-20px) scale(1.6); opacity: 0; }
-    }
-    #ai-preloader::before {
-      content: ""; position: absolute; inset: 0;
-      background:
-        radial-gradient(2px 2px at 20% 30%, rgba(212,165,116,.7), transparent),
-        radial-gradient(1px 1px at 70% 80%, rgba(135,169,107,.7), transparent),
-        radial-gradient(1.5px 1.5px at 40% 70%, rgba(168,196,144,.6), transparent),
-        radial-gradient(1px 1px at 85% 20%, rgba(212,165,116,.5), transparent),
-        radial-gradient(1.5px 1.5px at 10% 85%, rgba(135,169,107,.5), transparent),
-        radial-gradient(1px 1px at 55% 15%, rgba(255,255,255,.4), transparent);
-      background-size: 100% 100%;
-      animation: starfield 8s linear infinite;
-      opacity: .9;
-    }
-    #ai-preloader::after {
-      content: ""; position: absolute; inset: 0;
-      background:
-        linear-gradient(0deg, transparent 49.5%, rgba(135,169,107,.06) 50%, transparent 50.5%),
-        linear-gradient(90deg, transparent 49.5%, rgba(212,165,116,.04) 50%, transparent 50.5%);
-      background-size: 60px 60px;
-      animation: grid-pan 6s linear infinite;
-      mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
-      -webkit-mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
-    }
-    @keyframes starfield {
-      0%   { transform: translateY(0) scale(1); opacity: .6; }
-      50%  { opacity: 1; }
-      100% { transform: translateY(-30px) scale(1.05); opacity: .6; }
-    }
-    @keyframes grid-pan {
-      from { background-position: 0 0, 0 0; }
-      to   { background-position: 60px 60px, 60px 60px; }
-    }
-    .ai-core {
-      position: relative; width: 220px; height: 220px;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 36px;
-    }
-    .ai-ring {
-      position: absolute; inset: 0;
-      border-radius: 50%;
-      border: 1px solid transparent;
-    }
-    .ai-ring.r1 {
-      border: 1px solid rgba(135,169,107,.45);
-      box-shadow: 0 0 30px rgba(135,169,107,.35), inset 0 0 30px rgba(135,169,107,.2);
-      animation: spin-slow 4s linear infinite;
-    }
-    .ai-ring.r1::before, .ai-ring.r1::after {
-      content: ""; position: absolute; width: 10px; height: 10px;
-      background: #87A96B; border-radius: 50%;
-      box-shadow: 0 0 16px #87A96B, 0 0 32px #87A96B;
-    }
-    .ai-ring.r1::before { top: -5px; left: 50%; transform: translateX(-50%); }
-    .ai-ring.r1::after  { bottom: -5px; left: 50%; transform: translateX(-50%); }
-    .ai-ring.r2 {
-      inset: 22px;
-      border: 1px dashed rgba(212,165,116,.55);
-      animation: spin-slow 6s linear infinite reverse;
-    }
-    .ai-ring.r3 {
-      inset: 44px;
-      border: 1px solid rgba(212,165,116,.4);
-      box-shadow: inset 0 0 20px rgba(212,165,116,.25);
-      animation: spin-slow 3s linear infinite;
-    }
-    .ai-ring.r3::before {
-      content: ""; position: absolute; width: 8px; height: 8px;
-      background: #D4A574; border-radius: 50%;
-      top: 50%; right: -4px; transform: translateY(-50%);
-      box-shadow: 0 0 14px #D4A574, 0 0 28px #D4A574;
-    }
-    .ai-orbit-dot {
-      position: absolute; width: 6px; height: 6px; border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 0 10px #fff, 0 0 20px #87A96B;
-      top: 50%; left: 50%;
-      animation: orbit 2.5s linear infinite;
-    }
-    .ai-orbit-dot:nth-child(5) { animation-delay: -.83s; background: #D4A574; box-shadow: 0 0 10px #D4A574, 0 0 20px #D4A574; }
-    .ai-orbit-dot:nth-child(6) { animation-delay: -1.66s; background: #a8c490; box-shadow: 0 0 10px #a8c490, 0 0 20px #a8c490; }
-    @keyframes orbit {
-      from { transform: translate(-50%,-50%) rotate(0deg) translateX(95px) rotate(0deg); }
-      to   { transform: translate(-50%,-50%) rotate(360deg) translateX(95px) rotate(-360deg); }
-    }
-    .ai-paw {
-      position: relative; z-index: 5;
-      font-size: 4rem;
-      filter: drop-shadow(0 0 18px rgba(212,165,116,.85)) drop-shadow(0 0 36px rgba(135,169,107,.6));
-      animation: paw-pulse 2s ease-in-out infinite;
-    }
-    @keyframes paw-pulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 18px rgba(212,165,116,.85)) drop-shadow(0 0 36px rgba(135,169,107,.6)); }
-      50%      { transform: scale(1.12); filter: drop-shadow(0 0 28px rgba(212,165,116,1)) drop-shadow(0 0 56px rgba(135,169,107,.9)); }
-    }
-    .ai-scan {
-      position: absolute; inset: 0; border-radius: 50%;
-      background: linear-gradient(180deg, transparent 0%, rgba(135,169,107,.5) 50%, transparent 100%);
-      mix-blend-mode: screen;
-      animation: scan 2.4s ease-in-out infinite;
-      pointer-events: none;
-    }
-    @keyframes scan {
-      0%, 100% { transform: translateY(-50%); opacity: 0; }
-      50%      { transform: translateY(50%); opacity: .9; }
-    }
-    .ai-brand {
-      position: relative; z-index: 5;
-      font-family: 'Fraunces', serif;
-      font-size: 1.85rem; letter-spacing: .04em;
-      background: linear-gradient(90deg, #87A96B 0%, #D4A574 50%, #87A96B 100%);
-      background-size: 200% auto;
-      -webkit-background-clip: text; background-clip: text;
-      color: transparent;
-      animation: shimmer 3s linear infinite;
-      margin-bottom: 6px;
-    }
-    .ai-tag {
-      position: relative; z-index: 5;
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: .72rem; letter-spacing: .42em;
-      color: rgba(212,165,116,.85);
-      text-transform: uppercase;
-      margin-bottom: 32px;
-    }
-    .ai-tag .blink { animation: blink 1s steps(2) infinite; color: #87A96B; }
-    @keyframes blink { 50% { opacity: 0; } }
-    .ai-bar {
-      position: relative; z-index: 5;
-      width: 240px; height: 2px;
-      background: rgba(255,255,255,.08); border-radius: 999px; overflow: hidden;
-    }
-    .ai-bar::after {
-      content: ""; position: absolute; inset: 0; width: 40%;
-      background: linear-gradient(90deg, transparent, #87A96B, #D4A574, transparent);
-      box-shadow: 0 0 12px #D4A574;
-      animation: bar-slide 1.6s ease-in-out infinite;
-    }
-    @keyframes bar-slide {
-      0%   { left: -40%; }
-      100% { left: 100%; }
-    }
-    .ai-status {
-      position: relative; z-index: 5;
-      margin-top: 14px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: .7rem; color: rgba(168,196,144,.75);
-      letter-spacing: .15em;
-      min-height: 14px;
-    }
-    .ai-breeds {
-      position: relative; z-index: 5;
-      margin-top: 18px;
-      display: flex; gap: 18px;
-      font-size: .68rem; letter-spacing: .25em; text-transform: uppercase;
-      color: rgba(255,255,255,.55);
-    }
-    .ai-breeds span { display: flex; align-items: center; gap: 6px; }
-    .ai-breeds span::before {
-      content: ""; width: 6px; height: 6px; border-radius: 50%;
-      background: #87A96B; box-shadow: 0 0 8px #87A96B;
-      animation: blink 1.4s ease-in-out infinite;
-    }
-    .ai-breeds span:last-child::before { background: #D4A574; box-shadow: 0 0 8px #D4A574; animation-delay: .7s; }
-
-    /* Reduce motion */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<!-- ════════════════════════════════════════════
-     FUTURISTIC AI PRELOADER
-════════════════════════════════════════════ -->
-<div id="ai-preloader" role="status" aria-live="polite" aria-label="Loading ThrivePaw Companion">
-
-  <div class="ai-brand">ThrivePaw Companion</div>
-  <div class="ai-tag">AI Co-Pilot Booting<span class="blink">_</span></div>
-
-  <!-- Running track with dogs -->
-  <div class="ai-track" aria-hidden="true">
-    <div class="ai-horizon"></div>
-
-    <!-- Speed lines -->
-    <div class="speed-line" style="top:50%; left:10%; width:60px; animation-delay:0s;"></div>
-    <div class="speed-line" style="top:60%; left:30%; width:80px; animation-delay:-.3s;"></div>
-    <div class="speed-line" style="top:45%; left:60%; width:50px; animation-delay:-.6s;"></div>
-    <div class="speed-line" style="top:65%; left:75%; width:70px; animation-delay:-.9s;"></div>
-
-    <!-- Dust puffs -->
-    <div class="dust" style="left:25%; animation-delay:0s;"></div>
-    <div class="dust" style="left:55%; animation-delay:-.4s;"></div>
-    <div class="dust" style="left:80%; animation-delay:-.8s;"></div>
-
-    <!-- GOLDEN RETRIEVER (running) -->
-    <svg class="runner golden" viewBox="0 0 130 80" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="goldFur" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="#f3c878"/>
-          <stop offset="1" stop-color="#c8923f"/>
-        </linearGradient>
-      </defs>
-      <!-- Tail -->
-      <g class="tail-wag" style="transform-origin: 18px 32px;">
-        <path d="M18 32 Q4 22 0 30 Q8 30 16 38 Z" fill="url(#goldFur)"/>
-      </g>
-      <!-- Body -->
-      <ellipse cx="60" cy="38" rx="40" ry="16" fill="url(#goldFur)"/>
-      <!-- Chest -->
-      <ellipse cx="92" cy="42" rx="14" ry="13" fill="url(#goldFur)"/>
-      <!-- Head -->
-      <ellipse cx="105" cy="28" rx="14" ry="11" fill="url(#goldFur)"/>
-      <!-- Snout -->
-      <ellipse cx="118" cy="32" rx="8" ry="5" fill="#e0b878"/>
-      <circle cx="123" cy="30" r="1.6" fill="#1a1a1a"/>
-      <!-- Ear flapping -->
-      <path d="M98 20 Q92 30 100 36 Q104 28 106 22 Z" fill="#a8762e">
-        <animateTransform attributeName="transform" type="rotate" values="-8 100 22; 12 100 22; -8 100 22" dur=".4s" repeatCount="indefinite"/>
-      </path>
-      <!-- Eye -->
-      <circle cx="108" cy="26" r="1.4" fill="#1a1a1a"/>
-      <!-- Front legs -->
-      <g class="leg-front" style="transform-origin: 88px 50px;">
-        <rect x="84" y="48" width="6" height="22" rx="3" fill="#c8923f"/>
-      </g>
-      <g class="leg-front" style="transform-origin: 95px 50px; animation-delay: -.15s;">
-        <rect x="92" y="48" width="6" height="22" rx="3" fill="#a8762e"/>
-      </g>
-      <!-- Back legs -->
-      <g class="leg-back" style="transform-origin: 38px 50px;">
-        <rect x="34" y="48" width="6" height="22" rx="3" fill="#c8923f"/>
-      </g>
-      <g class="leg-back" style="transform-origin: 48px 50px; animation-delay: -.1s;">
-        <rect x="44" y="48" width="6" height="22" rx="3" fill="#a8762e"/>
-      </g>
-      <!-- Tongue -->
-      <path d="M126 33 Q130 36 128 40 Q124 38 124 34 Z" fill="#ff7a8a"/>
-    </svg>
-
-    <!-- FRENCH BULLDOG (running) -->
-    <svg class="runner frenchie" viewBox="0 0 110 70" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="frenchFur" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="#e8e0d4"/>
-          <stop offset="1" stop-color="#9a8f7e"/>
-        </linearGradient>
-      </defs>
-      <!-- Stubby tail -->
-      <path d="M14 30 Q6 28 4 32 Q10 34 14 36 Z" fill="#9a8f7e"/>
-      <!-- Body — chunky -->
-      <ellipse cx="52" cy="36" rx="34" ry="15" fill="url(#frenchFur)"/>
-      <!-- Big head -->
-      <ellipse cx="86" cy="26" rx="16" ry="14" fill="url(#frenchFur)"/>
-      <!-- Bat ears -->
-      <path d="M76 12 L74 22 L84 20 Z" fill="#8a7f6e"/>
-      <path d="M96 12 L98 22 L88 20 Z" fill="#8a7f6e"/>
-      <!-- Snout (flat) -->
-      <ellipse cx="98" cy="30" rx="8" ry="6" fill="#3a3530"/>
-      <circle cx="102" cy="28" r="1.8" fill="#1a1a1a"/>
-      <!-- Eyes -->
-      <circle cx="84" cy="24" r="1.6" fill="#1a1a1a"/>
-      <circle cx="91" cy="24" r="1.6" fill="#1a1a1a"/>
-      <!-- Wrinkles -->
-      <path d="M82 30 Q86 32 92 30" stroke="#6a5f4e" stroke-width="1" fill="none"/>
-      <!-- Front legs (short) -->
-      <g class="leg-front" style="transform-origin: 76px 48px;">
-        <rect x="73" y="46" width="6" height="16" rx="3" fill="#9a8f7e"/>
-      </g>
-      <g class="leg-front" style="transform-origin: 84px 48px; animation-delay: -.12s;">
-        <rect x="81" y="46" width="6" height="16" rx="3" fill="#7a6f5e"/>
-      </g>
-      <!-- Back legs -->
-      <g class="leg-back" style="transform-origin: 28px 48px;">
-        <rect x="25" y="46" width="6" height="16" rx="3" fill="#9a8f7e"/>
-      </g>
-      <g class="leg-back" style="transform-origin: 36px 48px; animation-delay: -.08s;">
-        <rect x="33" y="46" width="6" height="16" rx="3" fill="#7a6f5e"/>
-      </g>
-      <!-- Tongue out -->
-      <path d="M104 32 Q108 36 105 40 Q101 37 102 33 Z" fill="#ff7a8a"/>
-    </svg>
-  </div>
-
-  <div class="ai-bar"></div>
-  <div class="ai-status" id="ai-status">› Initializing neural bond…</div>
-  <div class="ai-breeds">
-    <span>Golden Retriever</span>
-    <span>French Bulldog</span>
-  </div>
-</div>
-
-<!-- Scroll progress bar -->
-<div id="scroll-progress"></div>
-
-<!-- ════════════════════════════════════════════
-     EXIT-INTENT POPUP (triggers MailerLite popup)
-════════════════════════════════════════════ -->
-<div id="exit-popup" role="dialog" aria-modal="true" aria-labelledby="popup-heading">
-  <div class="popup-card" style="background:#fff;border-radius:28px;max-width:480px;width:100%;padding:48px 36px;text-align:center;position:relative;box-shadow:0 30px 80px rgba(44,62,45,.3);overflow:hidden;">
-    <div class="orb orb-honey" style="width:200px;height:200px;top:-80px;right:-80px;opacity:.25;"></div>
-    <div class="orb orb-sage" style="width:180px;height:180px;bottom:-60px;left:-60px;opacity:.2;"></div>
-    <button id="popup-close" aria-label="Close" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:28px;color:#b5a99a;cursor:pointer;line-height:1;z-index:2;transition:transform .25s,color .25s;" onmouseover="this.style.color='#2C3E2D';this.style.transform='rotate(90deg)'" onmouseout="this.style.color='#b5a99a';this.style.transform='rotate(0)'">×</button>
-    <div style="position:relative;z-index:2;">
-      <div style="font-size:3.4rem;margin-bottom:14px;animation:wiggle 2s ease-in-out infinite;">🐾</div>
-      <h3 id="popup-heading" style="font-family:'Fraunces',serif;font-size:1.55rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;line-height:1.3;">Wait — don't leave without your free Golden Parent Guide 💛</h3>
-      <p style="color:#7D7461;font-size:.95rem;line-height:1.7;margin-bottom:28px;">25 beautifully designed pages of routines, bonding rituals, and celebration ideas. Yours free, instantly.</p>
-      <button class="btn-sage btn-glow ml-trigger" style="width:100%;padding:18px;font-size:16px;">Get My Free Guide →</button>
-      <p style="color:#c5b9ad;font-size:.8rem;margin-top:14px;">No spam, ever. Unsubscribe anytime.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Sticky mobile CTA -->
-<div id="sticky-cta">
-  <button class="btn-sage btn-breathe ml-trigger" style="width:100%;padding:14px 20px;font-size:15px;">🐾 Join the Waitlist — Free Guide Inside</button>
-</div>
-
-<!-- ════════════════════════════════════════════
-     SECTION 1 · HERO
-════════════════════════════════════════════ -->
-<section id="hero" class="hero-bg" style="min-height:100vh;display:flex;flex-direction:column;padding:0;">
-
-  <!-- Decorative orbs -->
-  <div class="orb orb-sage"  style="width:480px;height:480px;top:-120px;left:-120px;"></div>
-  <div class="orb orb-honey" style="width:520px;height:520px;bottom:-160px;right:-160px;animation-delay:-6s;"></div>
-
-  <!-- Floating paws container -->
-  <div id="paw-field" style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2;"></div>
-
-  <!-- Nav -->
-  <nav class="hero-content" style="padding:24px 32px;display:flex;align-items:center;justify-content:space-between;">
-    <div class="logo" style="font-family:'Fraunces',serif;font-size:1.85rem;font-weight:700;color:#fff;">
-      Thrive<span style="color:#D4A574;">Paw</span>
-    </div>
-    <button class="btn-sage ml-trigger" style="padding:12px 28px;font-size:14px;">Join the Waitlist</button>
-  </nav>
-
-  <!-- Hero body -->
-  <div class="hero-content" style="flex:1;display:flex;align-items:center;padding:32px 24px 88px;">
-    <div style="max-width:720px;margin:0 auto;text-align:center;">
-
-      <p class="reveal-zoom" style="font-family:'Caveat',cursive;font-size:1.3rem;color:#D4A574;margin-bottom:14px;letter-spacing:.04em;">
-        For the Golden parent who loves intentionally 🐾
-      </p>
-
-      <h1 class="reveal stagger-1" style="font-family:'Fraunces',serif;font-size:clamp(2.3rem,5.2vw,4rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:24px;letter-spacing:-.01em;">
-        Your Golden Deserves<br>
-        More Than <span class="h-accent">a Walk</span> &amp; <span class="h-accent">a Bowl</span>.
-      </h1>
-
-      <p class="reveal stagger-2" style="font-size:clamp(1rem,2.2vw,1.22rem);color:rgba(255,255,255,.92);line-height:1.75;margin-bottom:44px;max-width:580px;margin-left:auto;margin-right:auto;">
-        Beautiful daily routines, bonding rituals, and celebration ideas — designed for parents who treat their Golden Retriever like family.
-      </p>
-
-      <div class="reveal stagger-3" style="display:flex;flex-direction:column;align-items:center;gap:18px;">
-        <button class="btn-sage btn-glow ml-trigger" style="padding:20px 44px;font-size:17px;min-width:280px;">
-          Join the Waitlist — Free Guide Inside 🐾
-        </button>
-        <p style="color:rgba(255,255,255,.78);font-size:.9rem;">
-          Join <span class="counter" data-target="1000" style="font-weight:700;color:#D4A574;">0</span>+ Golden parents getting early access — launching January 2027
-        </p>
-        <p style="font-family:'Caveat',cursive;font-size:1.15rem;color:#D4A574;">
-          Free Golden Parent Guide sent instantly to your inbox 💌
-        </p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Scroll indicator -->
-  <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:10;animation:float-soft 2.4s ease-in-out infinite;">
-    <div style="width:26px;height:42px;border:2px solid rgba(255,255,255,.5);border-radius:14px;position:relative;">
-      <div style="width:4px;height:8px;background:#D4A574;border-radius:2px;position:absolute;top:8px;left:50%;transform:translateX(-50%);animation:float-soft 1.6s ease-in-out infinite;"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     MARQUEE STRIP
-════════════════════════════════════════════ -->
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span>🌅 Calm mornings</span><span>·</span>
-    <span>💛 Bonding rituals</span><span>·</span>
-    <span>🎉 Gotcha Day magic</span><span>·</span>
-    <span>📔 Memory keeping</span><span>·</span>
-    <span>🐾 Built for Goldens</span><span>·</span>
-    <span>✨ Premium &amp; intentional</span><span>·</span>
-    <span>🌅 Calm mornings</span><span>·</span>
-    <span>💛 Bonding rituals</span><span>·</span>
-    <span>🎉 Gotcha Day magic</span><span>·</span>
-    <span>📔 Memory keeping</span><span>·</span>
-    <span>🐾 Built for Goldens</span><span>·</span>
-    <span>✨ Premium &amp; intentional</span><span>·</span>
-  </div>
-</div>
-
-<!-- ════════════════════════════════════════════
-     SECTION 2 · SOCIAL PROOF STRIP
-════════════════════════════════════════════ -->
-<div style="background:#2C3E2D;padding:0 24px;position:relative;overflow:hidden;">
-  <div class="orb orb-sage" style="width:300px;height:300px;top:-100px;right:10%;opacity:.15;"></div>
-  <div class="stat-strip" style="max-width:900px;margin:0 auto;position:relative;z-index:2;">
-
-    <div class="reveal" style="flex:1;text-align:center;padding:32px 20px;">
-      <div style="font-family:'Fraunces',serif;font-size:1.65rem;font-weight:700;color:#D4A574;">
-        <span class="counter" data-target="1000">0</span>+
-      </div>
-      <div style="font-size:.78rem;color:rgba(255,255,255,.72);margin-top:6px;text-transform:uppercase;letter-spacing:.1em;">Golden Parents on Waitlist</div>
-    </div>
-
-    <div class="stat-sep" style="width:1px;background:rgba(255,255,255,.12);margin:24px 0;"></div>
-
-    <div class="reveal stagger-1" style="flex:1;text-align:center;padding:32px 20px;">
-      <div style="font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;color:#D4A574;">Featured In</div>
-      <div style="font-size:.78rem;color:rgba(255,255,255,.72);margin-top:6px;text-transform:uppercase;letter-spacing:.1em;">Pinterest's Pet Aesthetic Trends</div>
-    </div>
-
-    <div class="stat-sep" style="width:1px;background:rgba(255,255,255,.12);margin:24px 0;"></div>
-
-    <div class="reveal stagger-2" style="flex:1;text-align:center;padding:32px 20px;">
-      <div style="font-family:'Fraunces',serif;font-size:1.15rem;font-weight:600;color:#87A96B;">100% Lifestyle</div>
-      <div style="font-size:.78rem;color:rgba(255,255,255,.72);margin-top:6px;text-transform:uppercase;letter-spacing:.1em;">Zero Medical Advice</div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Wave divider -->
-<svg class="section-divider" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background:#2C3E2D;">
-  <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#F5EFE7"/>
-</svg>
-
-<!-- ════════════════════════════════════════════
-     SECTION 3 · THE PROBLEM
-════════════════════════════════════════════ -->
-<section style="background:#F5EFE7;padding:80px 24px 100px;position:relative;overflow:hidden;">
-  <div class="orb orb-honey" style="width:380px;height:380px;top:10%;left:-100px;opacity:.18;"></div>
-  <div class="orb orb-sage" style="width:340px;height:340px;bottom:5%;right:-80px;opacity:.18;animation-delay:-8s;"></div>
-
-  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:2;">
-
-    <div class="reveal-zoom" style="text-align:center;max-width:640px;margin:0 auto 64px;">
-      <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#87A96B;margin-bottom:14px;">You're not alone in this</p>
-      <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.05rem);font-weight:700;color:#2C3E2D;line-height:1.2;margin-bottom:24px;">
-        Loving Your Golden Shouldn't<br>Feel <span class="gradient-text">This Overwhelming</span>.
-      </h2>
-      <p style="font-size:1.08rem;color:#7D7461;line-height:1.8;">
-        Between Pinterest tabs, Reddit threads, and conflicting advice from every dog blog on the internet — being a Golden parent in 2026 is more confusing than ever. You're not alone if you've cried at 2am wondering if you're doing enough.
-      </p>
-    </div>
-
-    <div class="three-col">
-      <div class="card reveal stagger-1">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🌅</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">No Real Routine</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">Mornings feel chaotic. Your Golden senses it. You both deserve calmer days built around intention, not improvisation.</p>
-      </div>
-      <div class="card reveal stagger-2">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">📦</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Generic Advice Everywhere</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">Most pet content is one-size-fits-all. Goldens are not all dogs — they have specific emotional needs that deserve real attention.</p>
-      </div>
-      <div class="card reveal stagger-3">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">💝</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Missing the Magic Moments</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">First Gotcha Day. First snow. First road trip. These memories deserve more than a phone photo and a forgotten folder.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 4 · THE SOLUTION
-════════════════════════════════════════════ -->
-<section style="background:linear-gradient(180deg,#f0f4ec 0%,#F5EFE7 100%);padding:96px 24px;position:relative;overflow:hidden;">
-  <div class="orb orb-sage" style="width:420px;height:420px;top:10%;right:-120px;opacity:.22;"></div>
-
-  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:2;">
-
-    <div class="reveal-zoom" style="text-align:center;max-width:640px;margin:0 auto 56px;">
-      <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#D4A574;margin-bottom:14px;">Arriving January 2027</p>
-      <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.05rem);font-weight:700;color:#2C3E2D;line-height:1.2;margin-bottom:20px;">
-        ThrivePaw <span class="gradient-text">Companion</span>
-      </h2>
-      <p style="font-size:1.08rem;color:#7D7461;line-height:1.74;">An AI companion built specifically for Golden Retriever <em>and</em> French Bulldog parents. By breed-obsessed parents, for breed-obsessed parents.</p>
-
-      <!-- Breed selector -->
-      <div class="breed-toggle" style="display:inline-flex;margin-top:26px;background:rgba(44,62,45,.06);border:1px solid rgba(44,62,45,.1);border-radius:9999px;padding:5px;gap:4px;backdrop-filter:blur(8px);">
-        <button type="button" data-breed="golden" class="breed-btn active" style="border:none;background:linear-gradient(135deg,#87A96B,#a8c490);color:#fff;padding:10px 22px;border-radius:9999px;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .35s ease;box-shadow:0 6px 18px rgba(135,169,107,.4);">🦮 Golden Retriever</button>
-        <button type="button" data-breed="frenchie" class="breed-btn" style="border:none;background:transparent;color:#2C3E2D;padding:10px 22px;border-radius:9999px;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .35s ease;">🐶 French Bulldog</button>
-      </div>
-    </div>
-
-    <!-- App mockup -->
-    <div class="reveal-zoom app-mockup" style="max-width:560px;margin:0 auto 72px;background:linear-gradient(135deg,#2C3E2D 0%,#3d5540 100%);border-radius:28px;padding:48px 32px;box-shadow:0 30px 80px rgba(44,62,45,.28);position:relative;overflow:hidden;">
-      <div style="position:absolute;inset:-2px;background:linear-gradient(135deg,#87A96B,#D4A574,#87A96B);background-size:200% 200%;animation:gradient-shift 6s ease infinite;border-radius:30px;z-index:-1;opacity:.6;filter:blur(2px);"></div>
-      <div style="background:rgba(255,255,255,.07);border-radius:20px;padding:32px;border:1px solid rgba(255,255,255,.12);position:relative;">
-        <div style="font-family:'Fraunces',serif;font-size:1.5rem;color:#fff;text-align:center;margin-bottom:8px;">ThrivePaw Companion</div>
-        <div style="font-size:.74rem;color:rgba(255,255,255,.5);text-align:center;text-transform:uppercase;letter-spacing:.12em;margin-bottom:26px;">App Preview · Launching 2027</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:20px;">
-          <div style="background:rgba(135,169,107,.16);border-radius:14px;padding:18px;border:1px solid rgba(135,169,107,.22);text-align:center;transition:transform .35s ease;" onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform=''">
-            <div style="font-size:1.6rem;margin-bottom:6px;">🌅</div>
-            <div style="color:rgba(255,255,255,.85);font-size:.82rem;">Morning Routine</div>
-          </div>
-          <div style="background:rgba(212,165,116,.16);border-radius:14px;padding:18px;border:1px solid rgba(212,165,116,.22);text-align:center;transition:transform .35s ease;" onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform=''">
-            <div style="font-size:1.6rem;margin-bottom:6px;">💛</div>
-            <div style="color:rgba(255,255,255,.85);font-size:.82rem;">Bonding Ritual</div>
-          </div>
-          <div style="background:rgba(212,165,116,.12);border-radius:14px;padding:18px;border:1px solid rgba(212,165,116,.18);text-align:center;transition:transform .35s ease;" onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform=''">
-            <div style="font-size:1.6rem;margin-bottom:6px;">📔</div>
-            <div style="color:rgba(255,255,255,.85);font-size:.82rem;">Memory Keeper</div>
-          </div>
-          <div style="background:rgba(135,169,107,.12);border-radius:14px;padding:18px;border:1px solid rgba(135,169,107,.18);text-align:center;transition:transform .35s ease;" onmouseover="this.style.transform='translateY(-4px) scale(1.03)'" onmouseout="this.style.transform=''">
-            <div style="font-size:1.6rem;margin-bottom:6px;">🎉</div>
-            <div style="color:rgba(255,255,255,.85);font-size:.82rem;">Gotcha Day</div>
-          </div>
-        </div>
-        <div style="text-align:center;">
-          <span style="background:rgba(135,169,107,.22);border-radius:9999px;padding:10px 22px;color:#a8c490;font-size:.85rem;display:inline-block;">✦ Personalized to your Golden</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature cards -->
-    <div class="three-col">
-      <div class="card reveal stagger-1" style="border-top:4px solid #87A96B;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🌟</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Personalized Daily Routines</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">Custom morning, afternoon, and evening rhythms tuned to your Golden's high‑energy bursts or your Frenchie's heat‑sensitive nap schedule.</p>
-      </div>
-      <div class="card reveal stagger-2" style="border-top:4px solid #D4A574;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">💛</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Bonding Rituals That Matter</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">Weekly bonding exercises, Gotcha Day celebration ideas, and milestone moments — beautifully designed and ready to use.</p>
-      </div>
-      <div class="card reveal stagger-3" style="border-top:4px solid #87A96B;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">📔</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Memory Keeper Built In</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.98rem;">Capture every moment in a private digital scrapbook. Photos, milestones, and stories preserved forever.</p>
-      </div>
-    </div>
-
-    <!-- New AI capabilities (futuristic) -->
-    <div style="margin-top:72px;text-align:center;">
-      <p style="font-family:'Caveat',cursive;font-size:1.15rem;color:#87A96B;margin-bottom:10px;">Powered by breed-aware AI</p>
-      <h3 style="font-family:'Fraunces',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:#2C3E2D;margin-bottom:48px;">Smarter than any pet app you've used</h3>
-    </div>
-
-    <div class="three-col" style="margin-bottom:32px;">
-      <div class="card reveal stagger-1" style="border-top:4px solid #87A96B;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🧠</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Breed-Aware AI Brain</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">Trained on Golden Retriever <em>and</em> French Bulldog physiology, temperament, and lifecycle — not generic dog data.</p>
-      </div>
-      <div class="card reveal stagger-2" style="border-top:4px solid #D4A574;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">📸</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Vision Mood Reader</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">Snap a photo and our AI reads ear position, posture, and breathing to flag stress, joy, or those Frenchie zoomies brewing.</p>
-      </div>
-      <div class="card reveal stagger-3" style="border-top:4px solid #87A96B;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🩺</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Predictive Wellness Alerts</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">Hip‑check for Goldens, breathing & skin‑fold checks for Frenchies — gentle nudges before something becomes a vet visit.</p>
-      </div>
-    </div>
-
-    <div class="three-col">
-      <div class="card reveal stagger-1" style="border-top:4px solid #D4A574;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🍽️</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Smart Nutrition Planner</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">Adaptive meal plans tuned to weight, age, allergies, and activity. Frenchie‑safe ingredient warnings built in.</p>
-      </div>
-      <div class="card reveal stagger-2" style="border-top:4px solid #87A96B;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🗣️</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Voice Companion Chat</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">Ask anything — at 3 a.m., on a walk, mid‑training. A calm voice that knows your dog by name and history.</p>
-      </div>
-      <div class="card reveal stagger-3" style="border-top:4px solid #D4A574;">
-        <div class="card-icon" style="font-size:2.6rem;margin-bottom:16px;">🌐</div>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:#2C3E2D;margin-bottom:12px;">Pack Network</h3>
-        <p style="color:#7D7461;line-height:1.74;font-size:.96rem;">A private, breed‑specific community of nearby Golden & Frenchie parents — playdates, advice, lifelong friendships.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 5 · FOUNDER STORY
-════════════════════════════════════════════ -->
-<section style="background:#F5EFE7;padding:96px 24px;position:relative;overflow:hidden;">
-  <div class="orb orb-honey" style="width:380px;height:380px;bottom:-100px;left:-80px;opacity:.18;"></div>
-
-  <div style="max-width:1000px;margin:0 auto;position:relative;z-index:2;">
-    <div class="two-col">
-
-      <div class="reveal-left">
-        <div class="img-zoom" style="position:relative;box-shadow:0 24px 60px rgba(44,62,45,.16);">
-          <img
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&q=80&auto=format&fit=crop"
-            alt="ThrivePaw Founder"
-            loading="lazy"
-            style="width:100%;object-fit:cover;aspect-ratio:4/5;"
-          >
-        </div>
-        <div class="badge-breathe" style="position:relative;margin-top:-30px;margin-left:auto;width:fit-content;background:#fff;border-radius:18px;padding:14px 22px;box-shadow:0 12px 32px rgba(44,62,45,.14);">
-          <span style="font-family:'Caveat',cursive;font-size:1.15rem;color:#87A96B;font-weight:600;">Built with love 🐾</span>
-        </div>
-      </div>
-
-      <div class="reveal-right">
-        <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#D4A574;margin-bottom:14px;">Our story</p>
-        <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:#2C3E2D;line-height:1.25;margin-bottom:28px;">
-          Why I'm Building <span class="gradient-text">ThrivePaw</span>
-        </h2>
-        <div style="color:#7D7461;font-size:1.05rem;line-height:1.85;">
-          <p style="margin-bottom:18px;">Hi, I'm <strong style="color:#2C3E2D;">[Alex Charlotte]</strong>. I built ThrivePaw because I couldn't find a single resource that treated Golden Retriever parents like the loving, intentional humans they are.</p>
-          <p style="margin-bottom:18px;">Every other pet platform either talks down to you, overwhelms you with medical jargon, or sells you things you don't need.</p>
-          <p style="margin-bottom:28px;">ThrivePaw is different. We're building the calm, beautiful, intentional space that Golden parents have been waiting for. Join the waitlist. Be one of the first to experience it. And help shape what we build next.</p>
-        </div>
-        <div style="border-top:1px solid #e8ddd0;padding-top:22px;font-family:'Caveat',cursive;font-size:1.55rem;color:#2C3E2D;font-weight:600;">— With love, [Alex Charlotte] 🐾</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 6 · WHAT YOU GET TODAY
-════════════════════════════════════════════ -->
-<section id="mid-form" style="background:linear-gradient(180deg,#f0f4ec 0%,#e8f0e4 100%);padding:96px 24px;position:relative;overflow:hidden;">
-  <div class="orb orb-sage" style="width:420px;height:420px;top:5%;left:-120px;opacity:.2;"></div>
-  <div class="orb orb-honey" style="width:380px;height:380px;bottom:5%;right:-100px;opacity:.2;animation-delay:-10s;"></div>
-
-  <div style="max-width:660px;margin:0 auto;text-align:center;position:relative;z-index:2;">
-
-    <div class="reveal-zoom">
-      <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#87A96B;margin-bottom:14px;">Join today for free</p>
-      <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.05rem);font-weight:700;color:#2C3E2D;line-height:1.22;margin-bottom:48px;">
-        Join the Waitlist.<br><span class="gradient-text">Get Instant Access.</span>
-      </h2>
-    </div>
-
-    <div class="reveal" style="background:rgba(255,255,255,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.6);border-radius:28px;padding:42px 36px;box-shadow:0 16px 50px rgba(44,62,45,.1);margin-bottom:40px;text-align:left;">
-
-      <div class="benefit-row">
-        <span class="benefit-icon" style="font-size:1.7rem;margin-top:2px;flex-shrink:0;">📋</span>
-        <div>
-          <div style="font-weight:700;color:#2C3E2D;font-size:1.05rem;margin-bottom:6px;">Free 25-Page Golden Parent Survival Guide</div>
-          <div style="color:#7D7461;font-size:.94rem;line-height:1.65;">Delivered instantly to your inbox. Beautifully designed routines, rituals, and celebration ideas for every Golden parent.</div>
-        </div>
-      </div>
-
-      <div class="benefit-row">
-        <span class="benefit-icon" style="font-size:1.7rem;margin-top:2px;flex-shrink:0;">🚀</span>
-        <div>
-          <div style="font-weight:700;color:#2C3E2D;font-size:1.05rem;margin-bottom:6px;">Early Access — First to Try ThrivePaw Companion</div>
-          <div style="color:#7D7461;font-size:.94rem;line-height:1.65;">Be among the first Golden parents to experience the Companion when we launch in January 2027.</div>
-        </div>
-      </div>
-
-      <div class="benefit-row">
-        <span class="benefit-icon" style="font-size:1.7rem;margin-top:2px;flex-shrink:0;">💌</span>
-        <div>
-          <div style="font-weight:700;color:#2C3E2D;font-size:1.05rem;margin-bottom:6px;">Founder's Inner Circle</div>
-          <div style="color:#7D7461;font-size:.94rem;line-height:1.65;">Monthly emails with behind-the-scenes updates, exclusive content, and a direct line to shape what we build next.</div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="reveal stagger-1">
-      <button class="btn-sage btn-glow ml-trigger" style="padding:20px 44px;font-size:17px;min-width:280px;">
-        Reserve My Spot — It's Free →
-      </button>
-      <p style="color:#c5b9ad;font-size:.86rem;margin-top:16px;">No spam. Unsubscribe anytime. We'll never share your email.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 7 · TESTIMONIALS
-════════════════════════════════════════════ -->
-<section style="background:#F5EFE7;padding:96px 24px;position:relative;overflow:hidden;">
-  <div class="orb orb-honey" style="width:360px;height:360px;top:5%;right:-90px;opacity:.16;"></div>
-  <div class="orb orb-sage" style="width:340px;height:340px;bottom:5%;left:-90px;opacity:.16;animation-delay:-7s;"></div>
-
-  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:2;">
-
-    <div class="reveal-zoom" style="text-align:center;margin-bottom:56px;">
-      <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#D4A574;margin-bottom:14px;">Early members love it</p>
-      <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.05rem);font-weight:700;color:#2C3E2D;line-height:1.22;">
-        What Early Members<br>Are <span class="gradient-text">Saying</span>
-      </h2>
-    </div>
-
-    <div class="three-col">
-
-      <div class="t-card reveal stagger-1">
-        <div style="color:#D4A574;font-size:1.15rem;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="color:#2C3E2D;font-size:1rem;line-height:1.76;font-style:italic;margin-bottom:22px;">"Finally a brand that gets us. The Gotcha Day ideas alone changed how we celebrate Bailey. I've been sharing ThrivePaw with every Golden mom I know."</p>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Sarah M." loading="lazy" style="width:48px;height:48px;border-radius:9999px;object-fit:cover;flex-shrink:0;border:2px solid #D4A574;">
-          <div>
-            <div style="font-weight:700;color:#2C3E2D;font-size:.94rem;">Sarah M.</div>
-            <div style="color:#7D7461;font-size:.83rem;">Austin, TX</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="t-card reveal stagger-2">
-        <div style="color:#D4A574;font-size:1.15rem;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="color:#2C3E2D;font-size:1rem;line-height:1.76;font-style:italic;margin-bottom:22px;">"ThrivePaw feels like Pinterest meets self-care for dog moms. The aesthetic, the tone, the content — I'm obsessed. January 2027 cannot come fast enough."</p>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Jennifer L." loading="lazy" style="width:48px;height:48px;border-radius:9999px;object-fit:cover;flex-shrink:0;border:2px solid #87A96B;">
-          <div>
-            <div style="font-weight:700;color:#2C3E2D;font-size:.94rem;">Jennifer L.</div>
-            <div style="color:#7D7461;font-size:.83rem;">Portland, OR</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="t-card reveal stagger-3">
-        <div style="color:#D4A574;font-size:1.15rem;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="color:#2C3E2D;font-size:1rem;line-height:1.76;font-style:italic;margin-bottom:22px;">"I've never been more excited to wait for a launch. This is what Golden parents have needed — a real, intentional space built just for us."</p>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Megan R." loading="lazy" style="width:48px;height:48px;border-radius:9999px;object-fit:cover;flex-shrink:0;border:2px solid #D4A574;">
-          <div>
-            <div style="font-weight:700;color:#2C3E2D;font-size:.94rem;">Megan R.</div>
-            <div style="color:#7D7461;font-size:.83rem;">Nashville, TN</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 8 · FAQ
-════════════════════════════════════════════ -->
-<section style="background:#fff;padding:96px 24px;position:relative;">
-  <div style="max-width:720px;margin:0 auto;">
-
-    <div class="reveal-zoom" style="text-align:center;margin-bottom:56px;">
-      <p style="font-family:'Caveat',cursive;font-size:1.2rem;color:#87A96B;margin-bottom:14px;">Got questions?</p>
-      <h2 style="font-family:'Fraunces',serif;font-size:clamp(1.95rem,4vw,3.05rem);font-weight:700;color:#2C3E2D;line-height:1.22;">
-        Frequently Asked <span class="gradient-text">Questions</span>
-      </h2>
-    </div>
-
-    <div id="faq">
-      <!-- FAQ Items -->
-      <div class="faq-item reveal stagger-1" style="border-bottom:1px solid #f0ebe4;">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">When does ThrivePaw Companion launch?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">January 2027. Waitlist members get first access and a special early-bird price that won't be available after launch day.</p></div>
-      </div>
-
-      <div class="faq-item reveal stagger-2" style="border-bottom:1px solid #f0ebe4;">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">Is this a veterinary or medical service?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">Absolutely not. ThrivePaw is purely a lifestyle brand focused on routines, bonding, and celebration. Always consult your vet for medical concerns — that's their world, not ours.</p></div>
-      </div>
-
-      <div class="faq-item reveal stagger-3" style="border-bottom:1px solid #f0ebe4;">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">Why only Golden Retrievers?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">We believe deep specialization beats broad generalization. We're starting with the breed we know best and love most. French Bulldogs join our family in late 2026.</p></div>
-      </div>
-
-      <div class="faq-item reveal stagger-4" style="border-bottom:1px solid #f0ebe4;">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">How much will ThrivePaw Companion cost?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">Pricing will be announced at launch. Waitlist members receive exclusive founding-member rates — significantly lower than standard pricing.</p></div>
-      </div>
-
-      <div class="faq-item reveal stagger-5" style="border-bottom:1px solid #f0ebe4;">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">Can I get something today, before launch?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">Yes! Join the waitlist and instantly receive our free Golden Parent Survival Guide — 25 beautifully designed pages of routines, rituals, and celebration ideas.</p></div>
-      </div>
-
-      <div class="faq-item reveal stagger-5">
-        <button class="faq-toggle" style="width:100%;background:none;border:none;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;gap:16px;" aria-expanded="false">
-          <span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;color:#2C3E2D;line-height:1.4;">Where is ThrivePaw based?</span>
-          <span class="faq-icon" style="color:#87A96B;font-size:1.7rem;font-weight:300;flex-shrink:0;line-height:1;">+</span>
-        </button>
-        <div class="faq-answer"><p style="color:#7D7461;line-height:1.78;padding:0 0 22px;font-size:.98rem;">We're a small, independent team passionate about building thoughtful products for Golden Retriever parents around the world — starting in the United States.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 9 · FINAL CTA
-════════════════════════════════════════════ -->
-<section class="final-bg" style="padding:120px 24px;text-align:center;position:relative;">
-  <div class="orb orb-honey" style="width:480px;height:480px;top:-100px;left:5%;opacity:.3;"></div>
-  <div class="orb orb-sage" style="width:440px;height:440px;bottom:-100px;right:5%;opacity:.3;animation-delay:-9s;"></div>
-
-  <div id="final-paw-field" style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:2;"></div>
-
-  <div class="reveal-zoom" style="max-width:660px;margin:0 auto;position:relative;z-index:10;">
-    <p style="font-family:'Caveat',cursive;font-size:1.3rem;color:#D4A574;margin-bottom:18px;">The best year starts now 🐾</p>
-    <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.3rem,5.2vw,3.9rem);font-weight:700;color:#fff;line-height:1.16;margin-bottom:22px;">
-      Your Golden's <span class="gradient-text" style="background:linear-gradient(135deg,#D4A574,#fff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Best Year</span><br>Starts Here.
-    </h2>
-    <p style="font-size:1.15rem;color:rgba(255,255,255,.88);line-height:1.7;margin-bottom:48px;">
-      Join <span class="counter" data-target="1000" style="font-weight:700;color:#D4A574;">0</span>+ Golden parents on the waitlist. Get instant access to your free guide.
-    </p>
-
-    <button class="btn-honey btn-glow ml-trigger" style="padding:21px 48px;font-size:18px;min-width:300px;">
-      Get My Free Guide + Reserve My Spot →
-    </button>
-
-    <p style="color:rgba(255,255,255,.65);font-size:.9rem;margin-top:22px;">We launch in January 2027 — be there from day one. 🐾</p>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SECTION 10 · FOOTER
-════════════════════════════════════════════ -->
-<footer style="background:#2C3E2D;padding:72px 24px 32px;position:relative;overflow:hidden;">
-  <div class="orb orb-sage" style="width:300px;height:300px;top:-80px;left:10%;opacity:.1;"></div>
-
-  <div style="max-width:1100px;margin:0 auto;position:relative;z-index:2;">
-
-    <div class="three-col-footer" style="margin-bottom:48px;">
-
-      <div>
-        <div class="logo" style="font-family:'Fraunces',serif;font-size:2.1rem;font-weight:700;color:#fff;margin-bottom:12px;">Thrive<span style="color:#D4A574;">Paw</span></div>
-        <p style="color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.7;max-width:280px;">Daily routines for Golden Retriever parents who treat their dog like family.</p>
-      </div>
-
-      <div style="text-align:center;">
-        <div style="font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin-bottom:18px;">Follow along</div>
-        <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#D4A574';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">📌 Pinterest</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#D4A574';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">📸 Instagram</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#D4A574';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">📝 Substack</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#D4A574';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">🎵 TikTok</a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin-bottom:18px;">Company</div>
-        <div class="footer-links" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#fff';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">About</a>
-          <a href="#faq" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#fff';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">FAQ</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#fff';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">Contact</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#fff';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">Privacy Policy</a>
-          <a href="#" style="color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .25s,transform .25s;display:inline-block;" onmouseover="this.style.color='#fff';this.style.transform='translateX(4px)'" onmouseout="this.style.color='rgba(255,255,255,.7)';this.style.transform=''">Terms of Service</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:30px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;">
-      <p style="color:rgba(255,255,255,.45);font-size:.82rem;">© 2026 ThrivePaw. Built with love for Golden parents everywhere.</p>
-      <p style="color:rgba(255,255,255,.45);font-size:.82rem;">🐾 Premium. Thoughtful. Made with intention.</p>
-    </div>
-  </div>
-</footer>
-
-<!-- ════════════════════════════════════════════
-     JAVASCRIPT
-════════════════════════════════════════════ -->
-<script>
-/* ── Futuristic AI preloader ── */
-(function(){
-  const pre = document.getElementById('ai-preloader');
-  const statusEl = document.getElementById('ai-status');
-  if (!pre) return;
-  const lines = [
-    '› Initializing neural bond…',
-    '› Syncing Golden Retriever profile ✓',
-    '› Syncing French Bulldog profile ✓',
-    '› Calibrating bonding rituals…',
-    '› Loading memory keeper…',
-    '› Companion ready 🐾'
-  ];
-  let i = 0;
-  const tick = setInterval(() => {
-    statusEl.textContent = lines[i];
-    i++;
-    if (i >= lines.length) clearInterval(tick);
-  }, 520);
-  const dismiss = () => {
-    pre.classList.add('hidden');
-    setTimeout(() => pre.remove(), 900);
-  };
-  window.addEventListener('load', () => setTimeout(dismiss, 2600));
-  setTimeout(dismiss, 5000); // safety
-})();
-
-/* ── Breed selector toggle ── */
-(function(){
-  const btns = document.querySelectorAll('.breed-btn');
-  if (!btns.length) return;
-  btns.forEach(b => b.addEventListener('click', () => {
-    btns.forEach(x => {
-      x.classList.remove('active');
-      x.style.background = 'transparent';
-      x.style.color = '#2C3E2D';
-      x.style.boxShadow = 'none';
-    });
-    b.classList.add('active');
-    const isGolden = b.dataset.breed === 'golden';
-    b.style.background = isGolden
-      ? 'linear-gradient(135deg,#87A96B,#a8c490)'
-      : 'linear-gradient(135deg,#D4A574,#e8c9a0)';
-    b.style.color = '#fff';
-    b.style.boxShadow = isGolden
-      ? '0 6px 18px rgba(135,169,107,.4)'
-      : '0 6px 18px rgba(212,165,116,.4)';
-  }));
-})();
-
-/* ── Scroll progress bar ── */
-const progress = document.getElementById('scroll-progress');
-window.addEventListener('scroll', () => {
-  const h = document.documentElement;
-  const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
-  progress.style.width = scrolled + '%';
-}, { passive: true });
-
-/* ── Floating paw particles in hero & final CTA ── */
-function spawnPaws(containerId, count, opts = {}) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-  const colors = opts.colors || ['#D4A574', '#a8c490', '#e8c9a0'];
-  for (let i = 0; i < count; i++) {
-    const paw = document.createElement('div');
-    paw.className = 'paw-particle';
-    paw.textContent = '🐾';
-    paw.style.left = Math.random() * 100 + '%';
-    paw.style.bottom = '-40px';
-    paw.style.fontSize = (0.8 + Math.random() * 1.4) + 'rem';
-    paw.style.animationDuration = (12 + Math.random() * 18) + 's';
-    paw.style.animationDelay = (Math.random() * -20) + 's';
-    paw.style.color = colors[Math.floor(Math.random() * colors.length)];
-    container.appendChild(paw);
-  }
-}
-spawnPaws('paw-field', 12);
-spawnPaws('final-paw-field', 10);
-
-/* ── Scroll reveal (with multiple direction variants) ── */
-const revealObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom')
-  .forEach(el => revealObs.observe(el));
-
-/* ── Counter animation (counts up when visible) ── */
-const counterObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target;
-    const target = parseInt(el.dataset.target, 10);
-    const duration = 1800;
-    const start = performance.now();
-    const tick = (now) => {
-      const t = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = Math.floor(eased * target).toLocaleString();
-      if (t < 1) requestAnimationFrame(tick);
-      else el.textContent = target.toLocaleString();
-    };
-    requestAnimationFrame(tick);
-    counterObs.unobserve(el);
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
-
-/* ── 3D card tilt on mouseover ── */
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const r = card.getBoundingClientRect();
-    const x = e.clientX - r.left;
-    const y = e.clientY - r.top;
-    const rotateX = ((y - r.height / 2) / (r.height / 2)) * -4;
-    const rotateY = ((x - r.width / 2)  / (r.width  / 2)) *  4;
-    card.style.transform = `translateY(-8px) scale(1.01) perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
-
-/* ── Sticky mobile CTA ── */
-const stickyCta = document.getElementById('sticky-cta');
-let stickyActive = false;
-window.addEventListener('scroll', () => {
-  if (window.innerWidth >= 769) return;
-  const heroBottom = document.getElementById('hero').getBoundingClientRect().bottom;
-  if (heroBottom < 0 && !stickyActive) { stickyCta.classList.add('visible'); stickyActive = true; }
-  else if (heroBottom >= 0 && stickyActive) { stickyCta.classList.remove('visible'); stickyActive = false; }
-}, { passive: true });
-
-/* ── FAQ accordion ── */
-document.querySelectorAll('.faq-toggle').forEach(btn => {
-  btn.addEventListener('click', function () {
-    const item = this.closest('.faq-item');
-    const answer = item.querySelector('.faq-answer');
-    const isOpen = item.classList.contains('active');
-    document.querySelectorAll('.faq-item').forEach(i => {
-      i.classList.remove('active');
-      i.querySelector('.faq-answer').classList.remove('open');
-      i.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
-    });
-    if (!isOpen) {
-      item.classList.add('active');
-      answer.classList.add('open');
-      this.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-
-/* ── Exit-intent popup ── */
-let exitShown = false;
-function showExit() {
-  if (exitShown || window.innerWidth < 768) return;
-  exitShown = true;
-  document.getElementById('exit-popup').classList.add('show');
-  document.body.style.overflow = 'hidden';
-}
-function hideExit() {
-  document.getElementById('exit-popup').classList.remove('show');
-  document.body.style.overflow = '';
-}
-const exitTimer = setTimeout(showExit, 30000);
-document.addEventListener('mouseleave', e => { if (e.clientY <= 0) { clearTimeout(exitTimer); showExit(); } });
-document.getElementById('popup-close').addEventListener('click', hideExit);
-document.getElementById('exit-popup').addEventListener('click', e => { if (e.target === e.currentTarget) hideExit(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') hideExit(); });
-
-/* ── MailerLite popup trigger ──
-   Every button with class .ml-trigger will open the MailerLite popup.
-   The MailerLite Universal script handles the popup automatically based
-   on your dashboard settings (timed, exit-intent, scroll, etc).
-   If you have a specific form ID, replace 'show' call below with:
-     ml('show', 'YOUR_FORM_ID', true)
-*/
-document.querySelectorAll('.ml-trigger').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (window.ml) {
-      try { ml('show'); } catch (err) {}
-    }
-    // Hide our exit popup if the click came from inside it
-    if (btn.closest('#exit-popup')) setTimeout(hideExit, 300);
-  });
-});
-
-/* ── Smooth-scroll anchors ── */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function (e) {
-    const id = this.getAttribute('href');
-    if (id === '#') return;
-    const target = document.querySelector(id);
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-  });
-});
-
-/* ── Hero parallax (subtle) ── */
-const hero = document.getElementById('hero');
-if (hero && !window.matchMedia('(max-width:768px)').matches) {
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y < window.innerHeight) {
-      hero.style.backgroundPositionY = (y * 0.4) + 'px';
-    }
-  }, { passive: true });
-}
 </script>
+<!-- End MailerLite Universal -->
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* ── Palette (overridden by tweak) ─────────────── */
+  :root {
+    --cream: #F8F2E8;
+    --beige: #EAE0D0;
+    --beige-deep: #DCCDB5;
+    --honey: #D4A574;
+    --honey-deep: #B8895A;
+    --sage: #6B8359;
+    --sage-deep: #4A5D3A;
+    --ink: #2A2522;
+    --ink-soft: #5C544E;
+    --muted: #8C857E;
+    --line: #E5DAC6;
+  }
+  body[data-palette="honey"] {
+    --cream: #FBF4E6;
+    --beige: #F2E4CA;
+    --beige-deep: #E5D0AB;
+    --honey: #C68B4A;
+    --honey-deep: #A06F33;
+    --sage: #8A7048;
+    --sage-deep: #6B5634;
+    --ink: #3A2A1B;
+    --ink-soft: #6B5640;
+    --muted: #9C8B73;
+    --line: #EBDEC2;
+  }
+  body[data-palette="sage"] {
+    --cream: #F2EFE6;
+    --beige: #E0DCCC;
+    --beige-deep: #C9C5B3;
+    --honey: #B59868;
+    --honey-deep: #8E7547;
+    --sage: #5C7048;
+    --sage-deep: #3D5030;
+    --ink: #2A2E22;
+    --ink-soft: #50544A;
+    --muted: #80847A;
+    --line: #D9D5C5;
+  }
+
+  /* ── Typography ─────────────── */
+  .serif { font-family: 'Fraunces', Georgia, serif; font-weight: 400; letter-spacing: -0.015em; }
+  .script { font-family: 'Caveat', cursive; font-weight: 500; }
+  .eyebrow {
+    font-family: 'Inter Tight', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--honey-deep);
+  }
+
+  /* ── Buttons ─────────────── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 36px;
+    background: var(--ink);
+    color: var(--cream);
+    border: none;
+    border-radius: 999px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease, background-color .3s ease;
+    box-shadow: 0 6px 24px rgba(42,37,34,0.18);
+    position: relative;
+    overflow: hidden;
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
+    transform: translateX(-110%);
+    transition: transform .9s ease;
+  }
+  .btn:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(42,37,34,0.28); }
+  .btn:hover::after { transform: translateX(110%); }
+  .btn--ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1.5px solid var(--ink);
+    box-shadow: none;
+  }
+  .btn--ghost:hover { background: var(--ink); color: var(--cream); }
+  .btn--cream {
+    background: var(--cream);
+    color: var(--ink);
+  }
+  .btn--cream:hover { background: #fff; }
+
+  /* ── Reveals ─────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal.d1 { transition-delay: .1s; }
+  .reveal.d2 { transition-delay: .2s; }
+  .reveal.d3 { transition-delay: .3s; }
+  .reveal.d4 { transition-delay: .4s; }
+  .reveal.d5 { transition-delay: .5s; }
+
+  /* ── Container ─────────────── */
+  .container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  @media (max-width: 640px) {
+    .container { padding: 0 22px; }
+  }
+
+  /* ── Section spacing ─────────────── */
+  section { position: relative; }
+
+  /* ── Animations ─────────────── */
+  @keyframes drift {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(4deg); }
+  }
+  @keyframes drift-slow {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(20px, -16px); }
+    66% { transform: translate(-15px, 12px); }
+  }
+  @keyframes paw-float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.45; }
+    90% { opacity: 0.25; }
+    100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+  }
+  @keyframes heart-float {
+    0% { transform: translateY(0) scale(0.6); opacity: 0; }
+    20% { opacity: 0.7; }
+    100% { transform: translateY(-180px) scale(1) rotate(15deg); opacity: 0; }
+  }
+  @keyframes underline-grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  @keyframes shimmer-text {
+    0% { background-position: -150% 50%; }
+    100% { background-position: 150% 50%; }
+  }
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.025); }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes scroll-cue {
+    0%, 100% { transform: translateY(0); opacity: 0.4; }
+    50% { transform: translateY(8px); opacity: 1; }
+  }
+
+  .float-soft { animation: drift 6s ease-in-out infinite; }
+  .float-slow { animation: drift-slow 14s ease-in-out infinite; }
+  .breathe { animation: breathe 4s ease-in-out infinite; }
+
+  /* Script underline that draws in on reveal */
+  .underline-script {
+    position: relative;
+    display: inline-block;
+  }
+  .underline-script svg {
+    position: absolute;
+    left: -4%;
+    bottom: -14px;
+    width: 108%;
+    height: 18px;
+    stroke: var(--honey);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 1.2s cubic-bezier(.2,.7,.2,1) .4s;
+  }
+  .reveal.in .underline-script svg { transform: scaleX(1); }
+
+  /* ── Selection / scrollbar ─────────────── */
+  ::selection { background: var(--honey); color: var(--cream); }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--beige-deep); border-radius: 999px; }
+
+  /* ── Reduced motion ─────────────── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body data-palette="cream">
+
+<div id="root"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="illustrations.jsx"></script>
+<script type="text/babel" src="sections.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
 
 </body>
 </html>
